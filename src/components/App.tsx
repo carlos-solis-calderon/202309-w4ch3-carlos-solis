@@ -1,7 +1,10 @@
-import './App.css';
+import { List } from './list/list';
+import {} from '../style.scss';
 
-function App() {
-  return <></>;
+export function App() {
+  return (
+    <div>
+      <List></List>
+    </div>
+  );
 }
-
-export default App;

@@ -12,7 +12,7 @@
     "test:coverage": "jest --watchAll --coverage",
     "test:prod": "jest --watchAll --coverage --watchAll=false --passWithNoTests",
     "test:w": "jest --watchAll --coverage --watchAll=false --collectCoverageFrom=src/*.*",
-    "start": "json-server --watch db.json"
+    "api": "json-server --watch db.json"
   },
   "dependencies": {
     "localforage": "^1.10.0",
