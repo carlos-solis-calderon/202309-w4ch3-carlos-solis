@@ -11,12 +11,17 @@
     "test": "jest --watchAll",
     "test:coverage": "jest --watchAll --coverage",
     "test:prod": "jest --watchAll --coverage --watchAll=false --passWithNoTests",
-    "test:w": "jest --watchAll --coverage --watchAll=false --collectCoverageFrom=src/*.*"
+    "test:w": "jest --watchAll --coverage --watchAll=false --collectCoverageFrom=src/*.*",
+    "start": "json-server --watch db.json"
   },
   "dependencies": {
+    "localforage": "^1.10.0",
+    "match-sorter": "^6.3.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sass": "^1.69.5"
+    "react-router-dom": "^6.18.0",
+    "sass": "^1.69.5",
+    "sort-by": "^1.2.0"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^6.1.4",

@@ -1,0 +1,51 @@
+{
+  "characters": [
+    {
+      "id": 1,
+      "name": "Joffrey",
+      "family": "Baratheon",
+      "message": "I don't know why but I think I'm going to die soon",
+      "age": 20,
+      "emjoi": "👑",
+      "yearsOfReign": 2
+    },
+    {
+      "id": 2,
+      "name": "Jaime",
+      "family": "Lannister",
+      "message": "I don't know why but I think I'm going to die soon",
+      "age": 40,
+      "emjoi": "🗡",
+      "arm": "Spade",
+      "skill": 8
+    },
+    {
+      "id": 3,
+      "name": "Daenerys",
+      "family": "Targaryen",
+      "message": "I don't know why but I think I'm going to die soon",
+      "age": 25,
+      "emjoi": "🗡",
+      "arm": "Dragons",
+      "skill": 10
+    },
+    {
+      "id": 4,
+      "name": "Tyrion",
+      "family": "Lannister",
+      "message": "I don't know why but I think I'm going to die soon",
+      "age": 40,
+      "emjoi": "🎓",
+      "advisorOf": {
+        "id": 3,
+        "name": "Daenerys",
+        "family": "Targaryen",
+        "message": "I don't know why but I think I'm going to die soon",
+        "age": 25,
+        "emjoi": "🗡",
+        "arm": "Dragons",
+        "skill": 10
+      }
+    }
+  ]
+}
