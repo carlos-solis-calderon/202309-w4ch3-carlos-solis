@@ -2,7 +2,7 @@ import { Fighter } from '../../models/character';
 import { King } from '../../models/character';
 import { Squire } from '../../models/character';
 import { Adviser } from '../../models/character';
-import '../../style.scss';
+import '../../style.css';
 
 export type AnyCharacter = King | Fighter | Adviser | Squire;
 
@@ -11,12 +11,8 @@ function makeExtraData(item: AnyCharacter) {
     return <li>Años de reinado: {item.reignYears}</li>;
   } else if ('weapon' in item) {
     return <li>Arma: {item.weapon}</li>;
-    // } else if ('skillLevel' in item) {
-    //   return <li>Destreza: {item.skillLevel}</li>
   } else if ('adviseTo' in item) {
     return <li>Sirve a: {item.adviseTo.name}</li>;
-    // } else if  ('servilityGrade' in item) {
-    //   return <li>Peloteo: {item.servilityGrade}</li>
   } else if ('servesTo' in item) {
     return <li>Asesora a: {item.servesTo.name}</li>;
   }
@@ -32,16 +28,12 @@ export function Card({ character }: Props) {
       <li className="character col">
         <div className="card character__card">
           <img
-            src="{character.name.toLowerCase()}.jpg"
-            //         alt="{
-            //   character.name
-            // } {character.family}"
-            className="character__picture 
-      {!character.isAlive && 'card-img-top'}"
+            src={`${character.name.toLowerCase()}.jpg`}
+            alt={`${character.name} ${character.family}`}
           />
           <div className="card-body">
             <h2 className="character__name card-title h4">
-              {character.name} ${character.family}
+              {character.name} {character.family}
             </h2>
             <div className="character__info">
               <ul className="list-unstyled">
@@ -64,7 +56,6 @@ export function Card({ character }: Props) {
               </div>
             </div>
           </div>
-          {/* <i className="emoji">${makEmoji(character.category)}</i> */}
         </div>
       </li>
     </>

@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { Card } from '../cards/card';
 import { useTasks } from '../../hooks/useCharacter';
-import {} from '../../style.scss';
+import '../../style.css';
 
 export function List() {
   const { characters, loadCharacters } = useTasks();

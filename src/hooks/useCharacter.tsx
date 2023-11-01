@@ -13,7 +13,7 @@ export function useTasks() {
   const loadCharacters = useCallback(async () => {
     try {
       // Asíncrona
-      const loadedTasks = await repo.getCharacters();
+      const loadedTasks = await repo.getCharacter();
       // Síncrono
       setCharacters(loadedTasks);
     } catch (error) {
